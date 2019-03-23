@@ -1,6 +1,5 @@
 package nl.fhict.s3.logincomponent;
 
-import java.util.Collection;
 import java.util.HashMap;
 import nl.fhict.s3.logincomponent.data.RegistersUsers;
 import nl.fhict.s3.logincomponent.interfaces.LoginComponent;
@@ -16,7 +15,9 @@ public class LoginComponentImpl implements LoginComponent {
         return registersUsers.registerUser(newUser);
     }
 
-    public Collection<User> getAllUsers() {
+    public Iterable<? extends User> getAllUsers() {
         return registersUsers.getAll();
     }
+
+
 }

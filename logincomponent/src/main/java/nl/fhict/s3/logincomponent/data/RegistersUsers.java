@@ -1,6 +1,5 @@
 package nl.fhict.s3.logincomponent.data;
 
-import java.util.Collection;
 import java.util.Map;
 import java.util.UUID;
 import nl.fhict.s3.logincomponent.interfaces.User;
@@ -19,7 +18,7 @@ public class RegistersUsers {
         return newUser;
     }
 
-    public Collection<User> getAll() {
+    public Iterable<? extends User> getAll() {
         return userHashMap.values();
     }
 }
