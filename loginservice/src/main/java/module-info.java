@@ -1,0 +1,3 @@
+module loginservice {
+    requires logincomponent;
+}
